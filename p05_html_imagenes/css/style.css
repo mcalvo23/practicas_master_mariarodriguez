@@ -1,0 +1,19 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+img, svg {
+    width: 100%;
+    border: 1px solid black;
+}
+
+figure {
+    margin-top: 50px;
+    width: 500px;
+}
+
+.boton-flechas {
+    width: 120px;
+}
