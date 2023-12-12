@@ -1,0 +1,12 @@
+li { list-style: none; }
+
+body { background:pink}
+
+.estilos-musicales__item {border-bottom: 3px solid purple;}
+
+.e1 {font-size: 50px;}
+.e2 {font-size: 40px;}
+.e3 {font-size: 30px;}
+.e4 {font-size: 24px;}
+.e5 {font-size: 20px;}
+.e6 {font-size: 16px;}
