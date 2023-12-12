@@ -1,0 +1,40 @@
+thead{
+    background-color: rgb(0, 0, 255);
+    font-family:'Arial Narrow', Arial;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    
+
+}
+
+
+table, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    font-family:Arial;
+    font-size: 12px;
+    
+}
+
+td{
+    width: 100px;
+    padding: 20px;
+}
+
+.fila1{
+    background-color: rgb(123, 123, 238);
+}
+
+.fila2{
+    background-color: rgb(179, 179, 239);
+}
+
+.fila3{
+    background-color: rgb(206, 206, 241);
+}
+
+.fila4{
+    background-color: rgb(223, 223, 233);
+}
