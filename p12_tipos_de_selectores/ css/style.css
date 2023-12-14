@@ -1,0 +1,43 @@
+.parrafo-alternativo { 
+    color: blueviolet;
+    }
+
+#spanelement {
+    background-color: rgba(0, 128, 255, 0.5);
+}
+
+[title="elemento Discolo Rojo"] {
+    color: rgba(255, 0, 0, 0.0.5);
+}
+
+.seccion-1 {
+    color: pink;
+}
+
+.parrafo-alternativo.con-background {
+    background-color: pink;
+}
+
+.seccion-2 p:first-child {
+    color: yellow;
+}
+
+.seccion-3 p:nth-child(1) {
+    color: red;
+}
+
+.seccion-3 p:nth-child(2) {
+    color: green;
+}
+
+.seccion-3 p:nth-child(3) {
+    color: blue;
+}
+
+.seccion-2 p:not(:first-child) {
+    font-size: 21px;
+}
+
+::first-letter {
+    color: red;
+}
