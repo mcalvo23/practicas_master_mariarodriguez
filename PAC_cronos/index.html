@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+
+        .crono__slots{
+            display: flex;
+        }
+        span {
+            font-size: 2rem;
+            height: 100px;
+            flex-basis: 100px;
+            border: 2px solid black;
+            display: inline-block;
+        }
+
+    </style>
+
+    <div class="crono__slots">
+        <span class="crono__seconds">0</span>
+        <span class="crono__miliseconds">0</span>
+    </div>
+
+    <div class="crono__buttons">
+        <button class="crono__start" value="start">start</button>
+        <button class="crono__stop" value="stop">stop</button>
+        <button class="cero" value="zero">zero</button>
+    </div>
+
+    <script>
+        // constantes y variables
+        const cronoButtons = document.querySelector ('.crono__buttons');
+        const cronoSeconds = document.querySelector ('.crono__seconds');
+        const cronoCentiSeconds = document.querySelector ('.crono__miliseconds');
+        let counterSeconds = 0;
+        let counterCentiseconds = 0;
+        let cronoInterval = "";
+        let isRunning = false;
+
+        // funciones
+        
+        function showInHTML(seconds, centiseconds){
+            cronoSeconds.innerHTML = seconds;
+            cronoCentiSeconds.innerHTML = centiseconds;
+        }
+
+        function startCrono() {
+            if (!isRunning){
+                cronoInterval = setInterval(() => {
+                    counterCentiseconds++;
+                
+                    if(counterCentiseconds === 100){
+                        counterSeconds += 1;
+                        counterCentiseconds = 0;
+                    }
+
+                    showInHTML(counterSeconds, counterCentiseconds)
+                
+                }, 10);
+            }
+            isRunning = true
+        }
+
+        // this function stops the interval started in startCrono
+        function stopCrono() {
+            clearInterval(cronoInterval);
+            isRunning = false
+            
+        }
+
+        function zeroCrono() {
+            counterSeconds = 0;
+            counterCentiseconds = 0;
+            showInHTML(0,0);
+            isRunning = false;
+          }
+
+        
+
+        // llamadas a funcion, eventos, etc.
+        cronoButtons.addEventListener('click', function (e) {
+
+            e.target.value === "start" && startCrono();
+            e.target.value === "stop" && stopCrono();
+            e.target.value === "zero" && zeroCrono();
+
+          })
+
+    </script>
+    
+</body>
+</html>
