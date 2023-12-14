@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modular software</title>
+</head>
+<body>
+
+    <style>
+        .padding-20{
+            padding:20px
+        }
+
+        .bg-red{
+            background-color: red;
+        }
+
+        .border-2{
+            border: 2px solid black;
+        }
+    </style>
+
+    <div><img src="https://picsum.photos/200/300" alt="foto random" title="foto aleatoria"></div>
+    <button class="btn1">div changer</button>
+
+    <script>
+   
+   //capturar todo
+   const btn1 = document.querySelector('.btn1');
+   const capturedObj = document.querySelector('div');
+   const imgCapt =document.querySelector ('[alt="foto random"]')
+ 
+//    definir funcion
+   function divChanger (obj){
+        obj.classList.add('padding-20');
+        obj.classList.add('bg-red');
+        obj.classList.add('border-2');
+
+        
+    }
+
+    // lanzar evento y dentro invocar la funcion
+    btn1.addEventListener('click', function(){
+        divChanger(capturedObj);
+        imgCapt.setAttribute('title', 'foto random');
+        const altValue = imgCapt.getAttribute ('alt');
+    })
+    
+    
+   
+
+    
+
+    </script>
+    
+</body>
+</html>
