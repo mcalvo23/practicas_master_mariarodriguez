@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opuestos</title>
+</head>
+<body>
+    <style>
+        .solidaridad{
+            display: flex;
+            height: 100vh;
+        }
+
+        .solidaridad__yo, .solidaridad__tu{
+            flex-basis: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .solidaridad__yo{
+            background-color: black;
+            color: white;
+        }
+
+        .solidaridad__responsive{
+            display: none;
+        }
+
+        @media screen and (max-width: 600px){
+            .solidaridad{
+                flex-direction: column;
+            }
+
+            .solidaridad__desktop{
+                display: none;
+            }
+
+            .solidaridad__responsive{
+                display: block;
+            }
+
+            .solidaridad__yo{
+                background-color: aquamarine;
+                color: white;
+            }
+        }
+    </style>
+
+    <div class="solidaridad">
+        <div class="solidaridad__yo">
+            <p class="solidaridad__desktop solidaridad__desktop--left">YO</p>
+            <p class="solidaridad__responsive solidaridad__responsive--left">solidaridad</p>
+        </div>
+        <div class="solidaridad__tu">
+            <p class="solidaridad__desktop solidaridad__desktop--right">TU</p>
+            <p class="solidaridad__responsive solidaridad__responsive--right">La solidadirad construye un mundo sin ego más humano y más digno</p>
+        </div>
+    </div>
+
+</body>
+</html>
