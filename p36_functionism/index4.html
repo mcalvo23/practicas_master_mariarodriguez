@@ -1,0 +1,52 @@
+<html></html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="buttons">
+        <button value="copy" class="buttons__button buttons__button--copy">COPY</button>
+        <button value="delete" class="buttons__button buttons__button--delete">DELETE</button>
+        <button value="insert" class="buttons__button buttons__button--insert">INSERT TEXT</button>
+    </div>
+
+    <p class="dom-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus</p>
+
+    <script>
+        // capturar elementos
+        const buttons = document.querySelector('.buttons');
+        
+
+        // crear event listener sobre el contenedor de botones
+        buttons.addEventListener('click', function(e){
+            console.log(e.target);
+            const domItem = document.querySelector('.dom-item');
+            clickOnelements(domItem, e.target.value);
+
+        });
+
+        function clickOnelements(domElement, action){
+
+            if (action === "delete"){
+                domElement.remove();
+            }
+            else if (action === "copy"){
+                document.body.appendChild(domElement.cloneNode(true));
+            }
+            else if (action === "insert"){
+                domElement.innerHTML = "texto generado por JS";
+            }
+            
+            else {
+                console.log("no existe");
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>
