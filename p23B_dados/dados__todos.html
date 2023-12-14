@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Todos</title>
+</head>
+<body>
+
+    <style>
+        *{padding: 0%; margin: 0%; box-sizing: border-box;}
+
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: blue;
+        }
+
+        .dados{
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            display: flex;
+            background-color: white; 
+        }
+
+        .dado__1{    
+            justify-content: center;
+            align-items: center;
+        }
+            
+
+        .dado__2{
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .dado__3{
+            flex-direction: column;
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dado__4{
+            padding: 25px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dado__5{
+            padding: 25px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dado__6{
+            padding: 25px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dados__top, .dados__bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .dados__bottom{
+            align-items: flex-end;
+        }
+        .dado__right--2{
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .dado__left--4, .dado__right--4{
+            width: 60px;
+            height: 180px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dado__left--5, .dado__right--5{
+            width: 60px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dado__center--5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dado__left--6, .dado__right--6{
+            width: 60px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dado__item{
+            width:50px;
+            height: 50px;
+            border-radius:50px;
+            background-color: black; 
+        }
+
+    </style>
+
+    <div class="container">
+
+        <div class="dados__top">
+            <div class="dados dado__1">
+                <div class="dado__item dado__item--1"></div>
+            </div>
+    
+            <div class="dados dado__2">
+                <div class="dado__left--2">
+                    <div class="dado__item dado__item--1"></div>
+                </div>
+                
+                <div class="dado__right--2">
+                    <div class="dado__item dado__item--2"></div>
+                </div>
+            </div>
+    
+            <div class="dados dado__3">
+                <div class="dado__item dado__item--1"></div>
+                <div class="dado__item dado__item--2"></div>
+                <div class="dado__item dado__item--3"></div>
+            </div>
+        </div>
+        
+        <div class="dados__bottom">
+            <div class="dados dado__4">
+                <div class="dado__left--4">
+                    <div class="dado__item dado__item--1"></div>
+                    <div class="dado__item dado__item--2"></div>
+                </div>
+                
+                <div class="dado__right--4">
+                    <div class="dado__item dado__item--3"></div>
+                    <div class="dado__item dado__item--4"></div>
+                </div>
+            </div>
+    
+            <div class="dados dado__5">
+                <div class="dado__left--5">
+                    <div class="dado__item dado__item--1"></div>
+                    <div class="dado__item dado__item--2"></div>
+                </div>
+    
+                <div class="dado__center--5">
+                    <div class="dado__item dado__item--3"></div>
+                </div>
+                
+                <div class="dado__right--5">
+                    <div class="dado__item dado__item--4"></div>
+                    <div class="dado__item dado__item--5"></div>
+                </div>
+            </div>
+    
+            <div class="dados dado__6">
+                <div class="dado__left--6">
+                    <div class="dado__item dado__item--1"></div>
+                    <div class="dado__item dado__item--2"></div>
+                    <div class="dado__item dado__item--3"></div>
+                </div>
+                
+                <div class="dado__right--6">
+                    <div class="dado__item dado__item--4"></div>
+                    <div class="dado__item dado__item--5"></div>
+                    <div class="dado__item dado__item--6"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
