@@ -1,0 +1,68 @@
+
+*{padding: 0%;margin: 0%;box-sizing: border-box;}
+
+.cuadrado {
+    display: inline-block;
+    padding: 15px;
+}
+.cuadrado__shape {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+.cuadrado__shape--rojo {
+    background-color: rgb(255, 51, 0);
+}
+
+.cuadrado__shape--azul {
+    background-color: rgb(106, 0, 255);
+}
+
+.cuadrado__shape--amarillo {
+    background-color: rgb(255, 230, 0)
+}
+
+.cuadrado__shape--violeta {
+    background-color: rgb(145, 2, 145);
+}
+
+.cuadrado__shape--verde {
+    background-color: rgb(66, 192, 28);
+}
+
+.cuadrado__shape--rosa {
+    background-color: rgb(255, 0, 212);
+    }
+
+.cuadrado__shape--azulito {
+    background-color: rgb(127, 195, 255);
+}
+
+.cuadrado__shape--gris {
+    background-color: rgb(90, 88, 88);
+    position: relative;
+}
+
+.cuadrado__shape--rounded {
+    border-radius: 15px;
+}
+
+.cuadrado__small-item {
+    width: 40px;
+    height: 40px;;
+    background-color: rgb(255, 230, 0);
+
+}
+
+.cuadrado__small-item--rounded {
+    border-radius: 8px
+}
+
+.cuadrado__small-item--absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
