@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Práctica Periódico</title>
+    </head>
+        <body>
+
+<style>
+
+    header{
+        background-color: rgb(13, 18, 83); 
+        color: #f5f5dc;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 40px;
+        
+    }
+
+    footer{
+        background-color: rgb(13, 18, 83);
+        padding: 40px;
+    }
+
+    li {
+    list-style: none; 
+    display: inline;
+    margin-left: 10px ;
+    margin-right: 10px;
+    }
+
+    .periodico__nombre{
+        font-family: Impact ;
+        font-weight: lighter;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .periodico__menu{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center ; 
+    } 
+    
+    .periodico__contenido{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .contenido__izq{
+        width: 20%;
+    }
+
+    .contenido__der{
+        width: 70%;
+    }
+
+    .contenido__izq, .contenido__der{
+        background-color: rgb(249, 249, 207);
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .titular__der{
+        font-size: 40px;
+        font-weight: 700;
+        color: salmon;
+    }
+
+    .subtitulo__der{
+        font-weight: 600;
+    }
+    .inner__contenido--1{
+        width: 70%;
+    }
+
+    .inner__contenido--2{
+        display: flex;
+    }
+
+   figure{
+    width: 200px;
+    height: 70px;
+    background-color: white;
+   }
+    figcaption{
+        font-weight: 700;
+    }
+    
+</style>
+            <!-- HEADER -->
+            <header>
+                <h1 class="periodico__nombre">LA GACEITA</h1>
+                <nav>
+                    <menu class="periodico__menu">
+                        <li>NOTICIAS</li>
+                        <li>EXAMENES</li>
+                        <li>PROYECTOS</li>
+                        <li>ALUMNOS</li>
+                        <li>PROFESORES</li>
+                    </menu>
+                </nav>
+            </header>
+            <!-- HEADER -->
+
+            <!-- BODY -->
+            <div class="periodico__contenido">
+                <div class="contenido__izq">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates, fuga atque maxime praesentium mollitia veritatis pariatur laudantium nesciunt optio quasi aliquid, in aperiam unde id repellendus cum ratione obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, asperiores corrupti optio error sit non dolorum eaque dolorem ipsam voluptatem dolore architecto voluptatibus reiciendis unde, placeat odio nemo, qui accusantium.
+                    </p>
+                </div>
+                <div class="contenido__der">
+                    <div class="inner__contenido--1">
+                        <h2 class="titular__der">Notición importantisimo en 60px de font-size</h2>
+                        <p class="subtitulo__der">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p class="texto__der">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus culpa animi soluta ratione labore quasi eos reiciendis, nobis deserunt amet repudiandae, blanditiis laboriosam aliquam?
+                        </p>
+                        <div class="inner__contenido--2">
+                            <div class="articulo__izq">
+                                <figure>
+                                    <img src="img.png" alt="">    
+                                </figure>
+                                <figcaption>Lorem, ipsum</figcaption>
+                                <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odit incidunt quisquam cupiditate aut, voluptatibus facere, ad, tempora distinctio corrupti rem ullam voluptates facilis accusantium dignissimos atque commodi eveniet laborum?
+                                </p>
+                            </div>
+                            <div class="articulo__der">
+                                <figure>
+                                     <img src="img.png" alt="">   
+                                      
+                                </figure>
+                                <figcaption>Lorem, ipsum</figcaption>
+                                <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odit incidunt quisquam cupiditate aut, voluptatibus facere, ad, tempora distinctio corrupti rem ullam voluptates facilis accusantium dignissimos atque commodi eveniet laborum?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BODY -->
+
+            <!-- FOOTER -->
+            <footer>
+
+            </footer>
+            <!-- FOOTER -->
+        </body>
+</html>
